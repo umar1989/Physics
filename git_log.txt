@@ -6,3 +6,6 @@ error: failed to push some refs to 'github.com:umar1989/Physics.git'
 On branch main
 nothing to commit, working tree clean
 Everything up-to-date
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
