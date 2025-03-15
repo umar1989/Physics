@@ -286,3 +286,6 @@ To github.com:umar1989/Physics.git
  3 files changed, 6 insertions(+), 1 deletion(-)
 To github.com:umar1989/Physics.git
    44a795d..2e23ec4  main -> main
+On branch main
+nothing to commit, working tree clean
+Everything up-to-date
