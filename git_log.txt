@@ -959,3 +959,10 @@ To github.com:umar1989/Physics.git
  1 file changed, 4 insertions(+)
 To github.com:umar1989/Physics.git
    433fcae..56a39e3  main -> main
+[main a4745f8] Auto-update: Sun Mar 23 08:05:01 PM IST 2025
+ 1 file changed, 4 insertions(+)
+ssh: Could not resolve hostname github.com: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
