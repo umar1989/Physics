@@ -1,0 +1,89 @@
+\documentclass[12pt,a4paper]{extarticle}
+\usepackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{tasks}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+% Page headers
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{CBSE Physics MCQs}
+\rhead{\today}
+\cfoot{\thepage}
+\setlength{\headheight}{14.5pt} % fix fancyhdr warning
+
+% Fix label-width warning in tasks
+\settasks{
+  label-format = {\bfseries},
+  label-width = 13pt, % <-- fixed here
+  column-sep = 10pt
+}
+
+\begin{document}
+
+\begin{center}
+    \Huge \textbf{CBSE Physics -- Multiple Choice Questions}\\[0.5cm]
+    \large \textbf{Class 10 | Chapter: Electricity}
+\end{center}
+
+\begin{enumerate}
+
+\item What is the SI unit of electric current? \hfill \textbf{}
+\begin{tasks}(2)
+\task Ohm
+\task Ampere
+\task Volt
+\task Coulomb
+\end{tasks}
+
+\item The resistance of a wire is directly proportional to: \hfill \textbf{}
+\begin{tasks}(2)
+\task Length of wire
+\task Square of length
+\task Temperature
+\task Voltage
+\end{tasks}
+
+\item Which diagram correctly represents Ohm's Law in circuit form? \hfill \textbf{}
+
+\begin{center}
+\begin{circuitikz}[american]
+\draw (0,0) to[battery1, l=$V$] (0,2)
+      to[R=$R$] (3,2)
+      to[ammeter, i>_=$I$] (3,0)
+      -- (0,0);
+\end{circuitikz}
+\end{center}
+
+\begin{tasks}(2)
+\task $V = IR$
+\task $V = I/R$
+\task $R = V/I$
+\task Both (a) and (c)
+\end{tasks}
+
+\item What is the resistance of a 100 W, 220 V bulb? \hfill \textbf{}
+\begin{tasks}(2)
+\task $484 \, \Omega$
+\task $220 \, \Omega$
+\task $100 \, \Omega$
+\task $4.4 \, \Omega$
+\end{tasks}
+
+\item If 5 A current flows through a wire for 2 minutes, the charge flowing is: \hfill \textbf{}
+\begin{tasks}(2)
+\task $300\, \text{C}$
+\task $10\, \text{C}$
+\task $600\, \text{C}$
+\task $5\, \text{C}$
+\end{tasks}
+
+\end{enumerate}
+
+\end{document}
