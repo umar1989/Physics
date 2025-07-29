@@ -1,0 +1,120 @@
+\documentclass[11pt,a4paper]{extarticle}
+
+% ===================== Page Setup =====================
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{float}
+
+% ===================== Math & Physics =====================
+\usepackage{amsmath, amssymb}
+\usepackage{physics}
+\usepackage{siunitx}
+\usepackage{circuitikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% ===================== Color and Boxes =====================
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{listingsutf8}
+
+% Define custom boxes
+\newtcolorbox{formulaBox}[1][]{colback=blue!5!white,colframe=blue!75!black,
+  title=Important Formula,#1}
+
+\newtcolorbox{tipBox}[1][]{colback=yellow!10!white,colframe=orange!90!black,
+  title=Concept Tip,#1}
+
+\newtcolorbox{noteBox}[1][]{colback=green!5!white,colframe=green!50!black,
+  title=Note,#1}
+
+% ===================== Header and Footer =====================
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Physics Notes}
+\rhead{CBSE/JEE/NEET}
+\rfoot{Page \thepage\ of \pageref{LastPage}}
+
+% ===================== Section Format =====================
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+
+% ===================== Question Format Shortcuts =====================
+\newcommand{\question}[2]{\item #1 (#2 mark)\\\textbf{Answer:} #2}
+\newcommand{\mcqquestion}[5]{%
+  \item #1 \hfill \textbf{}%
+  \begin{tasks}(2)
+    \task #2
+    \task #3
+    \task #4
+    \task #5
+  \end{tasks}
+}
+\usepackage{tasks}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+
+% ===================== Title =====================
+\title{\Huge Physics Master Notes \& Question Paper Template}
+\author{Your Name \\ \small Department of Physics \\ \small CBSE / JEE / NEET}
+\date{\today}
+
+\begin{document}
+\maketitle
+\hrule
+\vspace{1em}
+
+% ===================== Example Content =====================
+
+\section{Reflection of Light}
+\subsection{Laws of Reflection}
+\begin{noteBox}
+The angle of incidence is equal to the angle of reflection.
+\end{noteBox}
+
+\begin{formulaBox}
+\[
+\theta_i = \theta_r
+\]
+\end{formulaBox}
+
+\subsection{Ray Diagram}
+\begin{center}
+\begin{tikzpicture}
+  \draw[thick] (-3,0) -- (3,0); % mirror
+  \draw[->, thick] (-2,2) -- (0,0) node[below] {O}; % incident ray
+  \draw[->, thick] (0,0) -- (2,2); % reflected ray
+  \draw[dashed] (0,-1) -- (0,3); % normal
+\end{tikzpicture}
+\end{center}
+
+\begin{tipBox}
+Use ray diagrams to trace paths of light in spherical mirrors.
+\end{tipBox}
+
+% ===================== Question Examples =====================
+\section*{Sample Questions}
+
+\begin{enumerate}
+  \item What is the principle behind reflection of light? (2)
+  \textbf{Answer: Reflection follows the law that angle of incidence equals angle of reflection.}
+
+  \item Derive the mirror equation using geometry. (5)\\
+  \textbf{Answer: Let us consider a concave mirror... (continue derivation).}
+
+  \item \textbf{Assertion:} The focal length of a concave mirror is negative. \\
+        \textbf{Reason:} The focus lies behind the mirror.
+
+  \mcqquestion{The image formed by a convex mirror is always}{Real}{Inverted}{Virtual and Erect}{None}
+
+\end{enumerate}
+
+% ===================== End =====================
+\end{document}
